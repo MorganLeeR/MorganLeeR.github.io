@@ -3,51 +3,56 @@
 <html>
 
 <head>
-	<title>Morgan's Blog</title>
+	<title>Morgan's Site</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/loginstyle.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<style>
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #333;
-	}
-	
-	li {
-		float: left;
-	}
-	
-	li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	
-	li a:hover {
-		background-color: #111;
-	}
-</style>
-
-
+<link href='https://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
 
 <body class="body">
+
 	<header class="mainheader">
-		<header class="header"></header>
+		<header class="header">Login</header>
+
 			<nav><ul>
+				<li class="active">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="unistuff.html">University</a></li>
 				<li><a href="stuff.html">Stuff</a></li>
 				<li><a href="about.html">About Me</a></li>
 				<li><a href="login.html">Login</a></li>
-			</nav></ul>
+			</ul></nav>
 	</header>
+
+<div id = "login">	
+<form>
+  <fieldset class="account-info">
+    <label>
+      Username
+      <input type="text" name="username">
+    </label>
+    <label>
+      Password
+      <input type="password" name="password">
+    </label>
+  </fieldset>
+  <fieldset class="account-action">
+    <input class="btn" type="submit" name="submit" value="Login">
+    <label>
+      <input type="checkbox" name="remember"> Stay signed in
+    </label>
+  </fieldset>
+</form>
+</div>
+
+	<footer class="mainfooter">
+		<p>Copyright &copy; 1642 <a href="#" title="Morgan Ridgely">Morgan Ridgely</a></p>
+	</footer>
+
+
 </body>
 
 </html>
